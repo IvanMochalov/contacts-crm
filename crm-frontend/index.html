@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./libs/choices.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <script type="module" src="./js/main.js"></script>
+    <script defer src="./libs/choices.min.js"></script>
+    <title>Skillbus</title>
+</head>
+<body>
+  <div class="site-container">
+    <header class="header">
+      <div class="container header__container">
+        <div class="header__logo logo"></div>
+        <input class="header__request" id="request" type="text" name="request" placeholder="Введите запрос" aria-label="Введите запрос">
+      </div>
+    </header>
+    <main class="main">
+      <section class="clients">
+        <div class="container clients__container">
+          <h1 class="clients__title title-reset">
+            Клиенты
+          </h1>
+          <table class="table clients__table">
+            <thead class="table__head">
+              <tr class="table__tr table__tr--head">
+                <th class="table__th table__th--id">
+                  <button data-column="ID" type="button" class="btn btn-reset">
+                    ID<svg class="column-dir reverse-column-dir" width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M2 6L2.705 6.705L5.5 3.915L5.5 10L6.5 10L6.5 3.915L9.29 6.71L10 6L6 2L2 6Z" fill="#9873FF" transform="translate(12 12) rotate(-180)"/>
+                    </svg>
+                  </button>
+                </th>
+                <th class="table__th table__th--fio">
+                  <button data-column="FIO" type="button" class="btn btn-reset">
+                    Фамилия Имя Отчество<svg class="column-dir" width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M2 6L2.705 6.705L5.5 3.915L5.5 10L6.5 10L6.5 3.915L9.29 6.71L10 6L6 2L2 6Z" fill="#9873FF" transform="translate(12 12) rotate(-180)"/>
+                    </svg>
+                  </button>
+                </th>
+                <th class="table__th table__th--creature">
+                  <button data-column="CreatedAt" type="button" class="btn btn-reset">
+                    Дата и время<br>создания<svg class="column-dir" width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M2 6L2.705 6.705L5.5 3.915L5.5 10L6.5 10L6.5 3.915L9.29 6.71L10 6L6 2L2 6Z" fill="#9873FF" transform="translate(12 12) rotate(-180)"/>
+                    </svg>
+                  </button>
+                </th>
+                <th class="table__th table__th--changes">
+                  <button data-column="UpdatedAt" type="button" class="btn btn-reset">
+                    Последние<br>изменения<svg class="column-dir" width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M2 6L2.705 6.705L5.5 3.915L5.5 10L6.5 10L6.5 3.915L9.29 6.71L10 6L6 2L2 6Z" fill="#9873FF" transform="translate(12 12) rotate(-180)"/>
+                    </svg>
+                  </button>
+                </th>
+                <th class="table__th table__th--contacts">
+                  <span class="btn">
+                    Контакты
+                  </span>
+                </th>
+                <th class="table__th table__th--actions">
+                  <span class="btn">
+                    Действия
+                  </span>
+                </th>
+              </tr>
+            </thead>
+            <tbody id="clients-list" class="table__body"></tbody>
+          </table>
+          <div class="btn-wrapper">
+            <button class="btn-actions btn-actions--add btn btn-reset" data-path="add">
+              <svg width="23" height="16" viewBox="0 0 23 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M14.5 8C16.71 8 18.5 6.21 18.5 4C18.5 1.79 16.71 0 14.5 0C12.29 0 10.5 1.79 10.5 4C10.5 6.21 12.29 8 14.5 8ZM5.5 6V3H3.5V6H0.5V8H3.5V11H5.5V8H8.5V6H5.5ZM14.5 10C11.83 10 6.5 11.34 6.5 14V16H22.5V14C22.5 11.34 17.17 10 14.5 10Z" fill="#9873FF"/>
+              </svg>
+              Добавить клиента
+            </button>
+          </div>
+        </div>
+      </section>
+    </main>
+  </div>
+
+
+</body>
+</html>
